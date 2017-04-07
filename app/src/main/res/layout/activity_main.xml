@@ -17,7 +17,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:textSize="30sp"
-        android:text="Hello World!" />
+        android:text="@string/init_date" />
     <TextView
         android:id="@+id/showTime"
         android:layout_width="wrap_content"
@@ -26,5 +26,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:textSize="60sp"
-        android:text="Hello World!" />
+        android:text="@string/init_time" />
 </RelativeLayout>

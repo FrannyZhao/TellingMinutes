@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">TellingMinutes</string>
+    <string name="init_date">..../../..</string>
+    <string name="init_time">--:--:--</string>
 </resources>
