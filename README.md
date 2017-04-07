@@ -1,5 +1,7 @@
 # TellingMinutes
-Time is precious, every minute counts~
+Time is precious, every minute counts~<br/>
+<a href='https://raw.githubusercontent.com/FrannyZhao/TellingMinutes/master/res/telling-minutes.apk'>Download telling-minutes.apk</a>
+<br/>
 <hr>
 <p><strong>Why:</strong></p>
 早上要按时打卡上班,但经常因为不小心刷牙多刷了1分钟,或者蹲坑多蹲了2分钟而错过打卡最后一分钟。:cry: <br/>
