@@ -12,8 +12,8 @@ I always hope there is a voice keep telling me every minute, <br/>so that I won'
 But I can't find such application online, so I code one for me~ :grinning: <br/>
 <hr>
 <p><strong>What:</strong></p>
-只有一个界面：<br/>
-Just one main interface：<br/>
+只有一个界面,一打开就会开始每分钟自动报时：<br/>
+Just one main interface, once the app is opened, it will begin to tell time every minute：<br/>
 <img src='https://raw.githubusercontent.com/FrannyZhao/TellingMinutes/master/res/mainLayout.png' width="300px" style='border: #f1f1f1 solid 1px'/>
 <br/>
 应用启动后会在通知栏占一条位置,确保即使应用不可见的时候,也可以在后台保持报时. <br/>
@@ -28,3 +28,5 @@ Press back key to quit the application, and the notification will be remove as w
 Support telling minutes in English, currently only can speak in Chinese... <br/>
 2. 要在设置里面打开谷歌tts才能报时, 待研究如何能自动设置tts... <br/>
 Need to enable google tts manually... <br/>
+
+等卡办好后,注册google cloud,使用翻译接口和上传接口...

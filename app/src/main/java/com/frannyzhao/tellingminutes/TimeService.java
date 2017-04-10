@@ -5,15 +5,9 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
-import android.os.Handler;
 import android.os.IBinder;
-import android.os.Message;
-import android.speech.tts.TextToSpeech;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
-
-import java.util.Calendar;
-import java.util.Date;
 
 public class TimeService extends Service {
     private static final String TAG = "TimeService";

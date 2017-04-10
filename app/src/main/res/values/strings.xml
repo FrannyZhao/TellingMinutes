@@ -2,4 +2,7 @@
     <string name="app_name">TellingMinutes</string>
     <string name="init_date">..../../..</string>
     <string name="init_time">--:--:--</string>
+    <string name="txt_open_tts">I can NOT talk now…T_T\nPlease click here to open Android system TTS,\nthen set proper language to help me talk~^_^</string>
+    <string name="btn_open_tts">Open Android TTS settings</string>
+    <string name="crash_toast">Something wrong with me…</string>
 </resources>
