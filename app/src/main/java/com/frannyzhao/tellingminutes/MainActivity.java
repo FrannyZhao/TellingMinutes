@@ -129,7 +129,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (mMinuts != -1 && mCalendar.get(Calendar.MINUTE) > mMinuts) {
             needTellMinutes = true;
             Log.d(TAG, "set needTellMinutes true");
-//        obj.equals(""); //hack test crash handler
+//            obj.equals(""); //hack test crash handler
         }
         mMinuts = mCalendar.get(Calendar.MINUTE);
 

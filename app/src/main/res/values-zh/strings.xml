@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">分钟报时</string>
+    <string name="init_date">..../../..</string>
+    <string name="init_time">--:--:--</string>
     <string name="txt_open_tts">我失声了呢…T_T\n请点击这里打开安卓系统TTS设置,\n设置好语言我才能为您报时哦~^_^</string>
     <string name="btn_open_tts">打开安卓TTS设置</string>
+    <string name="crash_toast">抱歉我出了点问题…</string>
 </resources>

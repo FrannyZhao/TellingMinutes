@@ -57,6 +57,11 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
     private String mCrashLogDir;
 
+    private static final String AWS_POOL_ID = "fake pool id";
+    private static final Regions AWS_POOL_REGION = Regions.DEFAULT_REGION;
+    private static final String AWS_BUCKET_NAME = "fake bucket name";
+    private static final String AWS_LOG_DIR = "fake/dir/name/";
+
     private static CrashHandler mInstance;
 
     private static TransferUtility mTransferUtility;
@@ -83,8 +88,8 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
 
         CognitoCachingCredentialsProvider credentialsProvider = new CognitoCachingCredentialsProvider(
                 mContext,    /* get the context for the application */
-                "us-west-2:21dfd055-ca55-4573-ad53-76b7248aa477",    /* Identity Pool ID */
-                Regions.US_WEST_2           /* Region for your identity pool--US_EAST_1 or EU_WEST_1*/
+                AWS_POOL_ID,    /* Identity Pool ID */
+                AWS_POOL_REGION           /* Region for your identity pool--US_EAST_1 or EU_WEST_1*/
         );
         AmazonS3 s3 = new AmazonS3Client(credentialsProvider);
         mTransferUtility = new TransferUtility(s3, mContext);
@@ -249,8 +254,8 @@ public class CrashHandler implements Thread.UncaughtExceptionHandler {
         Log.w(TAG, "going to upload log file: " + path);
         final File crashLogFile = new File(path);
         TransferObserver observer = mTransferUtility.upload(
-                "findmyphone-userfiles-mobilehub-1223343183",     /* The bucket to upload to */
-                "public/TellingMinutesCrashLog/" + fileName,    /* The key for the uploaded object */
+                AWS_BUCKET_NAME,     /* The bucket to upload to */
+                AWS_LOG_DIR + fileName,    /* The key for the uploaded object */
                 crashLogFile        /* The file where the data to upload exists */
         );
         observer.setTransferListener(new TransferListener() {
